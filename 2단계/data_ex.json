@@ -1,0 +1,24 @@
+{
+	"airlineSet": [ 
+		{ "Carrid": "AA", "CarrName": "American Airlines" },
+		{ "Carrid": "LH", "CarrName": "Lufthansa" }
+	],
+	"flightSet": [
+		{ "Carrid": "AA", "CarrName": "American Airlines", "ConnId":"0017", "CityFrom":"NEW YORK", "CityTo":"SAN FRANCISCO", "Fldate":"2020-10-01", 
+		  "SeatsTot":416, "SeatsOcc": 366, "SeatsOccB":30, "SeatsOccF":20 },
+		{ "Carrid": "AA", "CarrName": "American Airlines", "ConnId":"0017", "CityFrom":"NEW YORK", "CityTo":"SAN FRANCISCO", "Fldate":"2020-12-04", 
+		  "SeatsTot":424, "SeatsOcc": 373, "SeatsOccB":29, "SeatsOccF":21 },
+		{ "Carrid": "AA", "CarrName": "American Airlines", "ConnId":"0064", "CityFrom":"SAN FRANCISCO", "CityTo":"NEW YORK", "Fldate":"2020-10-13", 
+		  "SeatsTot":356, "SeatsOcc": 309, "SeatsOccB":28, "SeatsOccF":19 },
+		{ "Carrid": "AA", "CarrName": "American Airlines", "ConnId":"0064", "CityFrom":"SAN FRANCISCO", "CityTo":"NEW YORK", "Fldate":"2020-11-04", 
+		  "SeatsTot":363, "SeatsOcc": 314, "SeatsOccB":29, "SeatsOccF":20 },
+		{ "Carrid": "AA", "CarrName": "American Airlines", "ConnId":"0064", "CityFrom":"SAN FRANCISCO", "CityTo":"NEW YORK", "Fldate":"2020-12-06", 
+		  "SeatsTot":367, "SeatsOcc": 319, "SeatsOccB":29, "SeatsOccF":19 },
+		{ "Carrid": "LH", "CarrName": "Lufthansa", "ConnId":"0400", "CityFrom":"FRANKFURT", "CityTo":"NEW YORK", "Fldate":"2020-10-04", 
+		  "SeatsTot":364, "SeatsOcc": 315, "SeatsOccB":30, "SeatsOccF":19 },
+		{ "Carrid": "LH", "CarrName": "Lufthansa", "ConnId":"0400", "CityFrom":"FRANKFURT", "CityTo":"NEW YORK", "Fldate":"2020-11-05", 
+		  "SeatsTot":362, "SeatsOcc": 313, "SeatsOccB":29, "SeatsOccF":20 },
+		{ "Carrid": "LH", "CarrName": "Lufthansa", "ConnId":"0400", "CityFrom":"FRANKFURT", "CityTo":"NEW YORK", "Fldate":"2020-12-07", 
+		  "SeatsTot":360, "SeatsOcc": 313, "SeatsOccB":28, "SeatsOccF":19 }
+	]	
+}

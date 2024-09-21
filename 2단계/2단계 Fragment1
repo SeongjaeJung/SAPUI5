@@ -1,0 +1,47 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+>
+        
+            <l:VerticalLayout >
+                <l:HorizontalLayout >
+                    <Label text="Airline"></Label>
+                    <ComboBox id="comboId" items="{secondModel>/}" selectedKey="{secondModel>/0/Carrid}">
+                                                 //secondModel에 넣는건데 상위속성에는 /를 넣어주고 하위속성에는 >만 넣어준다
+                        <items>
+                            <core:Item key="{secondModel>Carrid}" text="{secondModel>Airline}" ></core:Item>
+                        </items>
+                    </ComboBox>
+                </l:HorizontalLayout>
+                <l:HorizontalLayout >
+                    <Label text="Connection Number"></Label>
+                    <Input id="inpId" value="{secondModel>/0/ConnId}" ></Input>
+                    <Button text="Search" press="onSearch"></Button>
+                </l:HorizontalLayout>
+            </l:VerticalLayout>
+            <Table id="flightId" headerText="Flight List" items="{/flightSet}" >    //items는 아래의 속성들의 경로를 선언해줌
+                <columns>
+                    <Column ><header><Text text="Airline"></Text></header></Column>
+                    <Column ><header><Text text="Airline name"></Text></header></Column>
+                    <Column ><header><Text text="Connection Number"></Text></header></Column>
+                    <Column ><header><Text text="Departure city"></Text></header></Column>
+                    <Column ><header><Text text="Arrival city"></Text></header></Column>
+                    <Column ><header><Text text="Flight date"></Text></header></Column>
+                    <Column ><header><Text text="Occupied seats"></Text></header></Column>
+                </columns>
+                <items>
+                    <ColumnListItem press="onPress" type="Active">          //type이 Active면 버튼처럼 누를 수 있음
+                        <cells>
+                            <Text text="{Carrid}"></Text>
+                            <Text text="{CarrName}"></Text>
+                            <Text text="{ConnId}"></Text>
+                            <Text text="{CityFrom}"></Text>
+                            <Text text="{CityTo}"></Text>
+                            <Text text="{Fldate}"></Text>
+                            <Text text="{SeatsTot}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+</core:FragmentDefinition>

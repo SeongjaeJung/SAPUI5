@@ -1,0 +1,64 @@
+===========================================================================================================================
+
+
+view code
+
+<mvc:View 
+    xmlns:core="sap.ui.core" 
+    controllerName="sync5.zux2030ex.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+>
+    
+    <Page id="page" title="{i18n>title}">
+        <content>   
+            <l:VerticalLayout >                                 //수직배열                                                       
+                <l:HorizontalLayout >                           //수평배열
+                    <Label text="Airline"></Label>
+                    <ComboBox id="comboId" items="{/airlineData}" >
+                        <items>
+                            <core:Item key="{carrId}" text="{carrName}" ></core:Item>
+                        </items>
+                    </ComboBox>
+                </l:HorizontalLayout>
+                <l:HorizontalLayout >
+                    <Label text="Connection Number"></Label>
+                    <Input id="inpId" value=""></Input>
+                    <Button text="Search" press="onSearch"></Button>
+                </l:HorizontalLayout>
+            </l:VerticalLayout>
+            <Table id="flightId" headerText="Flight List" items="{/flightListData}" >
+                <columns>
+                    <Column ><header><Text text="Airline"></Text></header></Column>
+                    <Column ><header><Text text="Airline name"></Text></header></Column>
+                    <Column ><header><Text text="Connection Number"></Text></header></Column>
+                    <Column ><header><Text text="Departure city"></Text></header></Column>
+                    <Column ><header><Text text="Arrival city"></Text></header></Column>
+                    <Column ><header><Text text="Flight date"></Text></header></Column>
+                    <Column ><header><Text text="Occupied seats"></Text></header></Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{carrId}"></Text>
+                            <Text text="{carrName}"></Text>
+                            <Text text="{connId}"></Text>
+                            <Text text="{cityFrom}"></Text>
+                            <Text text="{cityTo}"></Text>
+                            <Text text="{fldate}"></Text>
+                            <Text text="{seatsTot}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
+
+
+
+
+
+

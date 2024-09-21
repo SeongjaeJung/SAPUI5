@@ -1,0 +1,18 @@
+<mvc:View 
+    xmlns:core="sap.ui.core" 
+    controllerName="sync5.zux2030ex.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+>
+    
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <core:Fragment id="conditionFragmentId" fragmentName="sync5.zux2030ex.view.Condition" type="XML" />
+                //Fragment 선언 방법. id는 Fragment안의 요소들을 불러올때 controller에서 사용
+
+            <core:Fragment id="flightListFragmentId" fragmentName="sync5.zux2030ex.view.FlightList" type="XML" />
+        </content>
+    </Page>
+</mvc:View>

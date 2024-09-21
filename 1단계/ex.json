@@ -1,0 +1,80 @@
+{
+    "airlineData":[
+        {"carrId":"AA", "carrName":"American Airlines"},
+        {"carrId":"LH", "carrName":"Lufthansa"}
+    ],
+    "flightListData":[          
+        {"carrId": "AA", 
+        "carrName": "American Airlines", 
+        "connId": "0017", 
+        "cityFrom": "NEW YORK", 
+        "cityTo":"SAN FRANCISC", 
+        "fldate":"2020-10-01",
+        "seatsTot":"423"},
+
+        {"carrId": "AA", 
+        "carrName": "American Airlines", 
+        "connId": "0017", 
+        "cityFrom": "NEW YORK", 
+        "cityTo":"SAN FRANCISC", 
+        "fldate":"2020-11-02",
+        "seatsTot":"416"},
+
+        {"carrId": "AA", 
+        "carrName": "American Airlines", 
+        "connId": "0017", 
+        "cityFrom": "NEW YORK", 
+        "cityTo":"SAN FRANCISC", 
+        "fldate":"2020-12-04",
+        "seatsTot":"523"},
+
+        {"carrId": "AA", 
+        "carrName": "American Airlines", 
+        "connId": "0064", 
+        "cityFrom": "SAN FRANCISC", 
+        "cityTo":"NEW YORK", 
+        "fldate":"2020-10-03",
+        "seatsTot":"356"},
+
+        {"carrId": "AA", 
+        "carrName": "American Airlines", 
+        "connId": "0064", 
+        "cityFrom": "SAN FRANCISC", 
+        "cityTo":"NEW YORK", 
+        "fldate":"2020-11-04",
+        "seatsTot":"367"},
+
+        {"carrId": "AA", 
+        "carrName": "American Airlines", 
+        "connId": "0064", 
+        "cityFrom": "SAN FRANCISC", 
+        "cityTo":"NEW YORK", 
+        "fldate":"2020-12-06",
+        "seatsTot":"363"},
+        
+        {"carrId": "LH", 
+        "carrName": "Lufthansa", 
+        "connId": "0400", 
+        "cityFrom": "FRANKFURT", 
+        "cityTo":"NEW YORK", 
+        "fldate":"2020-10-04",
+        "seatsTot":"364"},
+
+        {"carrId": "LH", 
+        "carrName": "Lufthansa", 
+        "connId": "0400", 
+        "cityFrom": "FRANKFURT", 
+        "cityTo":"NEW YORK", 
+        "fldate":"2020-11-05",
+        "seatsTot":"362"},
+
+        {"carrId": "LH", 
+        "carrName": "Lufthansa", 
+        "connId": "0400", 
+        "cityFrom": "FRANKFURT", 
+        "cityTo":"NEW YORK", 
+        "fldate":"2020-12-07",
+        "seatsTot":"360"}
+    ]
+
+}

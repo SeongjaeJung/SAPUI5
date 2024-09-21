@@ -1,0 +1,36 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+>
+
+            <Panel id="panelId" headerText="Flight Detail" expanded="true" expandable="true">      
+                                //expanded true =패널 내용이 보임,  expandable= 패널 내용 열고닫고 설정
+                <content>
+                    <l:VerticalLayout >
+                        <l:HorizontalLayout >
+                            <Label text="Airline" ></Label>
+                            <Input value="{Carrid}" editable="false"></Input>
+                        </l:HorizontalLayout>
+                        <l:HorizontalLayout >
+                            <Label text="Connection Number"></Label>
+                            <Input value="{ConnId}" editable="false"></Input>
+                        </l:HorizontalLayout>
+                        <l:HorizontalLayout >
+                            <Label text="Flight Data"></Label>
+                            <Input value="{Fldate}" editable="false"></Input>
+                        </l:HorizontalLayout>
+                        <l:HorizontalLayout >
+                            <Label text="Occupied seats"></Label>
+                            <Input value="{SeatsOcc}" editable="false"></Input>         //editable, enabled = 읽기전용, 수정불가
+                            <Label text="Economy Class"></Label>
+                            <Input value="{SeatsOccB}" editable="false"></Input>
+                            <Label text="Business Class"></Label>
+                            <Input value="{SeatsOccF}" editable="false"></Input>
+                            <Label text="First Class"></Label>
+                        </l:HorizontalLayout >
+                    </l:VerticalLayout>
+                </content>
+            </Panel>
+
+</core:FragmentDefinition>
